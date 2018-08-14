@@ -1,8 +1,8 @@
 .classpath
 .project
 .metadata
-./bin
-./target
+/CRM System/bin
+/CRM System/target
 # Compiled class file
 *.class
 
