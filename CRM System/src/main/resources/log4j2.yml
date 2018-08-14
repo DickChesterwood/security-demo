@@ -1,0 +1,25 @@
+Configuration:
+   name: Log4jConfig
+
+   appenders:
+     Console:
+       name: console
+       PatternLayout:
+         Pattern: "%d{ABSOLUTE} %5p %c:%L - %m%n"
+
+   Loggers:
+      logger:
+       - name: org.springframework
+         level: info
+         AppenderRef:
+           - ref: console
+           
+       - name: org.hibernate
+         level: warn
+         AppenderRef:
+           - ref: console           
+           
+      Root:
+        level: warn
+        AppenderRef: 
+          - ref: console
